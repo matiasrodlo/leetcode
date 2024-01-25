@@ -1,7 +1,5 @@
 /* Given an integer n, return a counter function. This counter function initially returns n and then returns 1 more than the previous value every subsequent time it is called (n, n + 1, n + 2, etc).
 
- 
-
 Example 1:
 
 Input: 
@@ -26,3 +24,16 @@ Constraints:
 -1000 <= n <= 1000
 0 <= calls.length <= 1000
 calls[i] === "call" */
+
+// Solution:
+
+function plusOne(num, stop) {
+  for (i = 1; i <= stop; i++) {
+    num = num + 1;
+  }
+  return num;
+}
+
+plusOne(-1, 7);
+
+// Learning: add the return outside of the for loop.

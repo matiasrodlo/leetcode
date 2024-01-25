@@ -30,3 +30,14 @@ Constraints:
 0 <= arr.length <= 1000
 -109 <= arr[i] <= 109
 fn returns a number */
+
+function upArr(arr) {
+  const newArr = [];
+  for (i = 0; i < arr.length; i++) {
+    newArr.push(arr[i] + 1);
+  }
+  return newArr;
+}
+
+const mutatedArray = upArr([1, 2, 3]);
+console.log(mutatedArray);

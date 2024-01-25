@@ -42,3 +42,14 @@ Constraints:
 0 <= functions.length <= 1000
 all functions accept and return a single integer
 */
+
+function composeFuntions(funtions, x) {
+  let result = x;
+  for (let i = funtions.length - 1; i >= 0; i--) {
+    const currentFunction = funtions[i];
+    result = currentFunction(result);
+  }
+  return result;
+}
+
+console.log(composeFuntions([(x) => 10 * x, (x) => 10 * x, (x) => 10 * x], 1));

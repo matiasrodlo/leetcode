@@ -35,7 +35,7 @@ function createHelloWorld() {
 createHelloWorld() */
 
 var createHelloWorld = function () {
-  return function () {
-    return "Hello World";
-  };
+  return "Hello World";
 };
+
+createHelloWorld();

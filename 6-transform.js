@@ -51,3 +51,26 @@ Constraints:
 0 <= nums.length <= 1000
 0 <= nums[i] <= 1000
 0 <= init <= 1000 */
+
+function sum(init, nums) {
+  let lastCount = [];
+  for (let i = 0; i < nums.length; i++) {
+    let sumNum = init + nums[i];
+    lastCount.push(sumNum);
+  }
+  return lastCount;
+}
+
+function suma(lastCount) {
+  let sumResult = 0;
+  for (let i = 0; i < lastCount.length; i++) {
+    sumResult += lastCount[i];
+  }
+  return sumResult;
+}
+
+let resultArray = sum(0, [1, 2, 3, 4]);
+let resultSum = suma(resultArray);
+
+console.log(resultArray);
+console.log(resultSum);

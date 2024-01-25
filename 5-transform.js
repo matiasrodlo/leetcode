@@ -36,3 +36,15 @@ Constraints:
 
 0 <= arr.length <= 1000
 -109 <= arr[i] <= 109 */
+
+function filteredArr(arr) {
+  newArr = [];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] > 10) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+
+console.log(filteredArr([11, 20, 3, 15]));

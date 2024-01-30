@@ -16,4 +16,4 @@ function findAverage(array) {
   }
 }
 
-findAverage([]);
+findAverage([1, 2, 3]);

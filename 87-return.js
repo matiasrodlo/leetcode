@@ -15,7 +15,6 @@ exponential = exponent
 
 subtraction = subt
 
-Note: All math operations will be: a (operation) b
 */
 
 function add(a, b) {

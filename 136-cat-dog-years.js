@@ -34,4 +34,4 @@ function humanYearsCatYearsDogYears(humanYears) {
       catYears = 15 + 9 + 4 * (humanYears - 2);
       dogYears = 15 + 9 + 5 * (humanYears - 2);
     }
-  
+  }

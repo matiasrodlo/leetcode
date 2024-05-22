@@ -11,6 +11,5 @@ Example: (Input1, Input2 -->Output)
 */
 
 function sumStr(a, b) {
-  let x = parseInt(a) + parseInt(b);
-  return x.toString();
+  return String(Number(a) + Number(b));
 }

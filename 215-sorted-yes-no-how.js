@@ -31,5 +31,3 @@ function isSortedAndHow(array) {
 
 console.log(isSortedAndHow([40, 2, 30])); // Output: no
 console.log(isSortedAndHow([1, 2, 3])); // Output: yes, ascending
-console.log(isSortedAndHow([3, 2, 1])); // Output: yes, descending
-console.log(isSortedAndHow([1, 1, 1, 1])); // Output: no (not strictly ascending or descending)

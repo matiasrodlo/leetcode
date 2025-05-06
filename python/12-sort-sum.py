@@ -1,19 +1,22 @@
 """
-Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+Story
+Your online store likes to give out coupons for special occasions. Some customers try to cheat the system by entering invalid codes or using expired coupons.
 
-The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
+Task
+Your mission:
+Write a function called checkCoupon which verifies that a coupon code is valid and not expired.
 
-Mind the input validation.
+A coupon is no more valid on the day AFTER the expiration date. All dates will be passed as strings in this format: "MONTH DATE, YEAR".
 
-Example
-{ 6, 2, 1, 8, 10 } => 16
-{ 1, 1, 11, 2, 3 } => 6
-Input validation
-If an empty value ( null, None, Nothing, nil etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
+Examples:
+checkCoupon("123", "123", "July 9, 2015", "July 9, 2015")  == True
+checkCoupon("123", "123", "July 9, 2015", "July 2, 2015")  == False
 """
 
-def sum_array(arr):
-    if arr is None or len(arr) < 3:
-        return 0 
-    sorted_numbers = sorted(arr)
-    return sum(sorted_numbers[1:-1]) 
+def check_coupon(entered_code, correct_code, current_date, expiration_date):
+    if entered_code != correct_code:
+        return False
+    if current_date > expiration_date:
+        return True
+    else:
+        return False

@@ -1,12 +1,26 @@
-# LeetCode Solutions
+# LeetCode & Codewars Solutions
 
-A collection of my solutions to LeetCode problems, organized by problem number and name.
+A collection of my solutions to programming challenges from both LeetCode and Codewars platforms.
 
 ## Structure
 
-- Solutions are organized by problem number
-- Each solution includes the problem description and implementation
-- Multiple language solutions are provided where applicable
+- `python/` - Python solutions
+- `javascript/` - JavaScript solutions
+
+## Platforms
+
+### LeetCode
+- Algorithm problems
+- Data structure challenges
+- System design questions
+
+### Codewars
+- Basic programming exercises
+- String manipulation
+- Array operations
+- Object-oriented programming
+- Mathematical problems
+- Game logic challenges
 
 ## Languages
 

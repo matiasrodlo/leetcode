@@ -21,8 +21,3 @@ A collection of my solutions to programming challenges from both LeetCode and Co
 - Object-oriented programming
 - Mathematical problems
 - Game logic challenges
-
-## Languages
-
-- Python
-- JavaScript
